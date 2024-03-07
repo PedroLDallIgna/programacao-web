@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(226, 218, 128);
+    padding: 16px;
+    border-style: solid;
+    border-color: rgb(77, 77, 77);
+    border-width: 0 0 2px 0;
+}
+
+main {
+    min-height: 50vh;
+    background-color: rgb(255, 254, 242);
+    padding: 24px 32px;
+    border-left: solid rgb(77, 77, 77) 2px;
+}
+
+div.main-wrapper {
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+}
+
+footer {
+    color: white;
+    background-color: rgb(77, 77, 77);
+    text-align: center;
+    padding: 24px 0;
+    font-size: 1.25rem;
+}
+
+aside {
+    position: sticky;
+    top: 0px;
+    height: 500px;
+}
+
+aside nav {
+    margin-top: 16px;
+}
+
+section {
+    margin-top: 16px;
+}
+
+section p {
+    text-align: justify;
+}
+
+.articles-container {
+    padding: 24px 0;
+    border-style: solid;
+    border-color: rgb(77, 77, 77);
+    border-width: 2px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 32px;
+}
+
+.articles-container__title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.articles-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.article-item {
+    background-color: white;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 5px;
+}
+
+.article-item:hover {
+    background-color: rgba(148, 148, 148, 0.089);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.article-item__text {
+    font-size: 16px;
+    font-weight: 600;
+}

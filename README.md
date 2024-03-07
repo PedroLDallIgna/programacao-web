@@ -1,5 +1,2 @@
-# Aulas de Programação Web
-Professor: Igor Kalb
-
-## Como utilizar o repositório
-O repositório está estruturado de modo que cada aula corresponda a uma branch contendo a resolução do atividade proposta.
+# Aula 05-03
+Desenvolvimento de site com apenas HTML e CSS utilizando as boas práticas de semântica do HTML.
