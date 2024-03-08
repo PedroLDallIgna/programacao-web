@@ -1,5 +1,7 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Urbanist", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header {
@@ -8,6 +10,23 @@ header {
     border-style: solid;
     border-color: rgb(77, 77, 77);
     border-width: 0 0 2px 0;
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .blog-name {
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 24px;
+        }
+
+        .follow-link {
+            text-decoration: underline;
+        }
+    }
 }
 
 main {
@@ -15,6 +34,21 @@ main {
     background-color: rgb(255, 254, 242);
     padding: 24px 32px;
     border-left: solid rgb(77, 77, 77) 2px;
+
+    .publication {
+        margin-top: 24px;
+
+        .publication-title {
+            margin-bottom: 8px;
+            font-size: 24px;
+        }
+
+        .publication-content {
+            text-align: justify;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+    }
 }
 
 div.main-wrapper {
@@ -38,14 +72,7 @@ aside {
 
 aside nav {
     margin-top: 16px;
-}
-
-section {
-    margin-top: 16px;
-}
-
-section p {
-    text-align: justify;
+    margin-left: 16px;
 }
 
 .articles-container {
