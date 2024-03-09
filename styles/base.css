@@ -138,7 +138,6 @@ aside nav {
 
 .article-item:hover {
     background-color: rgba(148, 148, 148, 0.089);
-    cursor: pointer;
     transform: scale(1.05);
 }
 
