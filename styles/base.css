@@ -81,7 +81,7 @@ figcaption {
 
 div.main-wrapper {
     display: grid;
-    grid-template-columns: 20vw 1fr;
+    grid-template-columns: 25vw 1fr;
 }
 
 footer {
