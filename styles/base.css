@@ -42,10 +42,19 @@ main {
 
     .publication {
         margin-top: 24px;
+        border-bottom: 2px dashed rgb(77, 77, 77);
 
         .publication-title {
             margin-bottom: 8px;
             font-size: 24px;
+        }
+
+        .written-by {
+            font-size: 14px;
+            display: block;
+            padding: 10px;
+            background-color: lightgray;
+            border-left: 2px solid gray;
         }
 
         .publication-content {
@@ -54,10 +63,20 @@ main {
             margin-bottom: 8px;
         }
 
+        .publication-image__container {
+            display: flex;
+            margin: 8px;
+            justify-content: center;
+        }
+
         .publication-image {
             max-width: 100%;
         }
     }
+}
+
+figcaption {
+    text-align: center;
 }
 
 div.main-wrapper {
@@ -114,13 +133,13 @@ aside nav {
     row-gap: 12px;
     border: 1px solid rgb(77, 77, 77);
     border-radius: 5px;
+    transition: transform 0.5s ease;
 }
 
 .article-item:hover {
     background-color: rgba(148, 148, 148, 0.089);
     cursor: pointer;
     transform: scale(1.05);
-    transition: transform 0.5s ease;
 }
 
 .article-item__text {
