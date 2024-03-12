@@ -29,7 +29,7 @@ header {
     }
 }
 
-main {
+section.main-content {
     min-height: 50vh;
     background-color: rgb(255, 254, 242);
     padding: 24px 32px;
@@ -71,6 +71,53 @@ main {
 
         .publication-image {
             max-width: 100%;
+        }
+    }
+}
+
+section.banner-newsletter {
+    border-top: 2px solid rgb(77, 77, 77);
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    background-color: rgb(226, 218, 128);
+
+    .banner-newsletter__title {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        display: flex;
+    }
+
+    .newsletter-input {
+        border: 1px solid rgb(77, 77, 77);
+        outline: 0;
+        padding: 8px 12px;
+        display: flex;
+        font-size: 16px;
+        box-shadow: inset rgb(77, 77, 77) 0px 0px 15px -5px;
+        transition: 0.2s ease;
+
+        &:focus, &:hover {
+            transition: 0.2s ease;
+            box-shadow: unset;
+        }
+    }
+
+    .newsletter-button {
+        background-color: rgb(77, 77, 77);
+        color: white;
+        font-weight: 800;
+        padding: 8px 12px;
+        border: none;
+        font-size: 18px;
+
+        &:hover {
+            cursor: pointer;
         }
     }
 }
