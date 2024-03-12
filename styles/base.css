@@ -26,3 +26,71 @@ h1 {
 .block {
     display: block;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-start-x {
+    justify-content: flex-start;
+}
+
+.flex-end-x {
+    justify-content: flex-end;
+}
+
+.space-between-x {
+    justify-content: space-between;
+}
+
+.space-around-x {
+    justify-content: space-around;
+}
+
+.center-x {
+    justify-content: center;
+}
+
+.center-y {
+    min-height: 80px;
+    align-items: center;
+}
+
+.flex-start-y {
+    min-height: 80px;
+    align-items: flex-start;
+}
+
+.flex-end-y {
+    min-height: 80px;
+    align-items: flex-end;
+}
+
+.flex-stretch-y {
+    min-height: 80px;
+    align-items: stretch;
+}
+
+.space-between-y {
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.space-around-y {
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
