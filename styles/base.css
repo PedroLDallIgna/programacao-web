@@ -142,7 +142,7 @@ footer {
 aside {
     position: sticky;
     top: 0px;
-    height: 500px;
+    height: fit-content;
 }
 
 aside nav {
