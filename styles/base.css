@@ -4,9 +4,9 @@ body {
     font-style: normal;
 }
 
-header {
+.header {
     background-color: rgb(226, 218, 128);
-    padding: 16px;
+    padding: 16px 24px;
     border-style: solid;
     border-color: rgb(77, 77, 77);
     border-width: 0 0 2px 0;
@@ -15,6 +15,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: 1366px;
+        margin: 0 auto;
 
         .blog-name {
             font-family: "Lobster", sans-serif;
@@ -29,11 +31,49 @@ header {
     }
 }
 
+.top-navigation {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: 12px 24px;
+
+    .top-navigation__container {
+        max-width: 1366px;
+        margin: 0 auto;
+        
+        .top-navigation__list {
+            display: flex;
+            justify-content: flex-start;
+            gap: 12px;
+            padding: 0;
+        }
+        
+        .top-navigation__item {
+            list-style: none;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: color ease .2s;
+            font-size: 18px;
+            padding: 0 4px;
+        
+            &:hover {
+                color: rgb(226, 218, 128);
+            }
+        }
+    }
+    
+}
+
+
 section.main-content {
     min-height: 50vh;
     background-color: rgb(255, 254, 242);
     padding: 24px 32px;
     border-left: solid rgb(77, 77, 77) 2px;
+
+    @media (max-width: 768px) {
+        border-left: none;
+        padding: 24px;
+    }
 
     .main-title {
         padding-bottom: 8px;
@@ -73,6 +113,10 @@ section.main-content {
             max-width: 100%;
         }
     }
+}
+
+section.main-content .publication:nth-last-child(-n + 1) {
+    border: none;
 }
 
 section.banner-newsletter {
@@ -129,6 +173,11 @@ figcaption {
 div.main-wrapper {
     display: grid;
     grid-template-columns: 25vw 1fr;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 footer {
@@ -143,9 +192,13 @@ aside {
     position: sticky;
     top: 0px;
     height: fit-content;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
-aside nav {
+aside .navigation {
     margin: 16px 8px 0 16px;
 }
 
