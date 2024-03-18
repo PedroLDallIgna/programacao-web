@@ -115,10 +115,6 @@ section.main-content {
     }
 }
 
-section.main-content .publication:nth-last-child(-n + 1) {
-    border: none;
-}
-
 section.banner-newsletter {
     border-top: 2px solid rgb(77, 77, 77);
     padding: 40px 0;
