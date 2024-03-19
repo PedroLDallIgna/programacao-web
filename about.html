@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/suggestions.css">
-    <title>Sugira | Meu Blog Pessoal</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <title>Sobre | Meu Blog Pessoal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -29,39 +29,18 @@
         </div>
     </nav>
     <main>
-        <section class="suggestions-section">
-            <div class="suggestions-section__container">
-                <h2 class="suggestions-section__title">Sugira conteúdos que você gostaria de ver aqui.</h2>
-                <form class="suggestions-section__form">
-                    <label class="form__label">
-                        Nome:
-                        <input class="form__input" type="text" name="name">
-                    </label>
-                    <label class="form__label">
-                        Assunto:
-                        <input class="form__input" type="text" name="subject">
-                    </label>
-                    <label class="form__label">
-                        Mensagem:
-                        <textarea class="form__textarea" name="message"></textarea>
-                    </label>
-                    <input type="submit" value="Enviar" class="form__submit">
-                </form>
+        <section class="about-section">
+            <div class="about-section__container">
+                <h2 class="about-section__title">Sobre mim</h2>
+                <figure>
+                    <img src="assets/me.jpg" alt="Eu" class="about-section__image">
+                </figure>
+                <p class="about-section__text">Sim, é literalmente eu.</p>
             </div>
         </section>
     </main>
     <footer>
         <p><em>made by</em> <a href="https://github.com/PedroLDallIgna" target="_blank"><strong>PedroLDallIgna</strong></a></p>
     </footer>
-
-    <script>
-        const form = document.querySelector('.suggestions-section__form');
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            window.alert('Sugestão enviada!')
-        })
-    </script>
 </body>
 </html>

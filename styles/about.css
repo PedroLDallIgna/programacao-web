@@ -1,0 +1,16 @@
+.about-section {
+    width: 100%;
+    padding: 60px 24px;
+
+    .about-section__container {
+        max-width: 1366px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .about-section__image {
+            max-width: 120px;
+        }
+    }
+}
