@@ -1,0 +1,79 @@
+.suggestions-section {
+    width: 100%;
+    padding: 60px 24px;
+
+    .suggestions-section__container {
+        max-width: 1366px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 32px;
+
+        .suggestions-section__title {
+            align-self: center;
+        }
+
+        .suggestions-section__form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin: 0 auto;
+            gap: 20px;
+
+            .form__label {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                font-size: 20px;
+                
+                .form__input {
+                    border: 1px solid rgb(77, 77, 77);
+                    outline: 0;
+                    padding: 8px 12px;
+                    display: flex;
+                    font-size: 16px;
+                    box-shadow: inset rgb(77, 77, 77) 0px 0px 15px -5px;
+                    transition: 0.2s ease;
+    
+                    &:focus, &:hover {
+                        transition: 0.2s ease;
+                        box-shadow: unset;
+                    }
+                }
+
+                .form__textarea {
+                    border: 1px solid rgb(77, 77, 77);
+                    outline: 0;
+                    padding: 8px 12px;
+                    display: flex;
+                    font-size: 16px;
+                    box-shadow: inset rgb(77, 77, 77) 0px 0px 15px -5px;
+                    transition: 0.2s ease;
+                    resize: vertical;
+                    min-height: 200px;
+    
+                    &:focus, &:hover {
+                        transition: 0.2s ease;
+                        box-shadow: unset;
+                    }
+                }
+            }
+
+            .form__submit {
+                background-color: rgb(77, 77, 77);
+                color: white;
+                font-weight: 800;
+                padding: 8px 12px;
+                border: none;
+                font-size: 18px;
+                max-width: 200px;
+                align-self: flex-end;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
