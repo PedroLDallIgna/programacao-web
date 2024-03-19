@@ -23,6 +23,7 @@ body {
             font-weight: 400;
             font-style: normal;
             font-size: 24px;
+            user-select: none;
         }
 
         .follow-link {
@@ -43,7 +44,7 @@ body {
         .top-navigation__list {
             display: flex;
             justify-content: flex-start;
-            gap: 12px;
+            gap: 16px;
             padding: 0;
         }
         
@@ -53,7 +54,6 @@ body {
             letter-spacing: 0.5px;
             transition: color ease .2s;
             font-size: 18px;
-            padding: 0 4px;
         
             &:hover {
                 color: rgb(226, 218, 128);
@@ -63,8 +63,17 @@ body {
     
 }
 
+div.main-wrapper {
+    display: grid;
+    grid-template-columns: 25vw 1fr;
 
-section.main-content {
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main-content {
     min-height: 50vh;
     background-color: rgb(255, 254, 242);
     padding: 24px 32px;
@@ -112,10 +121,82 @@ section.main-content {
         .publication-image {
             max-width: 100%;
         }
+
+        &:last-child {
+            border: none;
+        }
     }
 }
 
-section.banner-newsletter {
+aside {
+    position: sticky;
+    top: 0px;
+    height: fit-content;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+aside .navigation {
+    margin: 16px 8px 16px 24px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.recommendations {
+    padding: 40px 24px;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(77, 77, 77);
+    border-width: 2px 0;
+    background-color: #fff;
+    
+    .articles-container {
+        max-width: 1366px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        
+        .articles-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            
+            .article-item {
+                background-color: white;
+                padding: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 12px;
+                border: 1px solid rgb(77, 77, 77);
+                border-radius: 5px;
+                transition: transform 0.5s ease;
+                
+                &:hover {
+                    background-color: rgba(148, 148, 148, 0.089);
+                    transform: scale(1.02);
+                }
+                
+                .article-item__text {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                
+                .article-item__image {
+                    height: 36vw;
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+}
+
+.banner-newsletter {
     border-top: 2px solid rgb(77, 77, 77);
     padding: 40px 0;
     display: flex;
@@ -162,86 +243,10 @@ section.banner-newsletter {
     }
 }
 
-figcaption {
-    text-align: center;
-}
-
-div.main-wrapper {
-    display: grid;
-    grid-template-columns: 25vw 1fr;
-
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 footer {
     color: white;
     background-color: rgb(77, 77, 77);
     text-align: center;
     padding: 24px 0;
     font-size: 1.25rem;
-}
-
-aside {
-    position: sticky;
-    top: 0px;
-    height: fit-content;
-
-    @media (max-width: 768px) {
-        display: none;
-    }
-}
-
-aside .navigation {
-    margin: 16px 8px 0 16px;
-}
-
-.articles-container {
-    padding: 24px 0;
-    border-style: solid;
-    border-color: rgb(77, 77, 77);
-    border-width: 2px 0;
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    margin-top: 32px;
-}
-
-.articles-container__title {
-    font-size: 24px;
-    font-weight: 900;
-}
-
-.articles-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-}
-
-.article-item {
-    background-color: white;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 12px;
-    border: 1px solid rgb(77, 77, 77);
-    border-radius: 5px;
-    transition: transform 0.5s ease;
-}
-
-.article-item:hover {
-    background-color: rgba(148, 148, 148, 0.089);
-    transform: scale(1.05);
-}
-
-.article-item__text {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.article-item__image {
-    max-width: 100%;
 }

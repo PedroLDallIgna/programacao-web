@@ -14,17 +14,16 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <p class="blog-name">Meu Blog Pessoal</p>
+            <h1 class="blog-name">Meu Blog Pessoal</h1>
             <a class="follow-link" href="https://example.com" target="_blank">Siga-me</a>
         </div>
     </header>
     <nav class="top-navigation">
         <div class="top-navigation__container">
             <ul class="top-navigation__list">
-                <li class="top-navigation__item"><a href="">Teste</a></li>
-                <li class="top-navigation__item"><a href="">Teste</a></li>
-                <li class="top-navigation__item"><a href="">Teste</a></li>
-                <li class="top-navigation__item"><a href="">Teste</a></li>
+                <li class="top-navigation__item"><a href="newsletter.html">Newsletter</a></li>
+                <li class="top-navigation__item"><a href="">Sugira</a></li>
+                <li class="top-navigation__item"><a href="">Sobre</a></li>
             </ul>
         </div>
     </nav>
@@ -42,10 +41,10 @@
                 </nav>
             </aside>
             <section class="main-content">
-                <h1 class="main-title">Publicações</h1>
+                <h2 class="main-title">Publicações</h2>
                 
-                <section class="publication">
-                    <h2 id="publication-1" class="publication-title">Resenha: Oppenheimer (2023)</h2>
+                <article class="publication">
+                    <h3 id="publication-1" class="publication-title">Resenha: Oppenheimer (2023)</h3>
                     <span class="written-by">*Escrito por: <em>Leo</em>, IA do Brave.</span>
                     <div class="publication-image__container">
                         <figure>
@@ -65,10 +64,10 @@
                     <p class="publication-content">
                         “Oppenheimer” (2023) é imperdível tanto para os entusiastas da história quanto da ciência, demonstrando a capacidade incomparável de Nolan de mesclar narrativa e espetáculo. É uma experiência cinematográfica instigante que deixará os espectadores refletindo sobre as implicações éticas dos avanços científicos.
                     </p>
-                </section>
+                </article>
     
-                <section class="publication">
-                    <h2 id="publication-2" class="publication-title">Resenha: Drive (2011)</h2>
+                <article class="publication">
+                    <h3 id="publication-2" class="publication-title">Resenha: Drive (2011)</h3>
                     <span class="written-by">*Escrito por: <em>ChatGPT</em>.</span>
                     <div class="publication-image__container">
                         <figure>
@@ -94,10 +93,10 @@
                     <p class="publication-content">
                         Concluindo, a atuação de Ryan Gosling em “Drive” é nada menos que extraordinária, elevando um filme já excepcional ao reino da grandeza cinematográfica. Sua interpretação do enigmático Driver é um tour de force de habilidade de atuação, mostrando sua capacidade de cativar o público com sua presença magnética e caracterização sutil. Para os fãs de narrativas convincentes e performances poderosas, “Drive” é absolutamente imperdível.
                     </p>
-                </section>
+                </article>
     
-                <section class="publication">
-                    <h2 id="publication-3" clas4s="publication-title">Resenha: Barbie (2023)</h2>
+                <article class="publication">
+                    <h3 id="publication-3" class="publication-title">Resenha: Barbie (2023)</h3>
                     <span class="written-by">*Escrito por: <em>Leo</em>, IA do Brave.</span>
                     <div class="publication-image__container">
                         <figure>
@@ -117,10 +116,10 @@
                     <p class="publication-content">
                         “Barbie” (2023) é uma celebração da autodescoberta, lembrando-nos que abraçar a nossa individualidade e libertar-nos das normas sociais pode levar a uma vida mais plena. A visão e a narrativa únicas de Gerwig fazem de "Barbie" (2023) uma adição notável à franquia Barbie e imperdível para fãs de todas as idades.
                     </p>
-                </section>
+                </article>
     
-                <section class="publication">
-                    <h2 id="publication-4" class="publication-title">Resenha: The Big Short (2015)</h2>
+                <article class="publication">
+                    <h3 id="publication-4" class="publication-title">Resenha: The Big Short (2015)</h3>
                     <span class="written-by">*Escrito por: <em>ChatGPT</em>.</span>
                     <div class="publication-image__container">
                         <figure>
@@ -149,27 +148,28 @@
                     <p class="publication-content">
                         Concluindo, “The Big Short” é um triunfo cinematográfico que aborda um assunto complexo e oportuno com inteligência, sagacidade e coração. Ancorado por performances estelares e direção magistral, o filme serve como um lembrete claro dos perigos da ganância desenfreada e da importância de responsabilizar aqueles que estão no poder. É imperdível para qualquer pessoa interessada em compreender os acontecimentos que levaram à crise financeira e o impacto duradouro que esta continua a ter na sociedade.
                     </p>
-                </section>
-    
-                <div class="articles-container">
-                    <p class="articles-container__title">Recomendações</p>
-                    <div class="articles-list">
-                        <article class="article-item">
-                            <img src="assets/the_godfather.jpg" alt="Capa The Godfather" class="article-item__image">
-                            <p class="article-item__text">The Godfather</p>
-                        </article>
-                        <article class="article-item">
-                            <img src="assets/the_godfather_part_ii.jpg" alt="Capa The Godfather Part II" class="article-item__image">
-                            <p class="article-item__text">The Godfather Part II</p>
-                        </article>
-                        <article class="article-item">
-                            <img src="assets/the_godfather_part_iii.jpeg" alt="Capa The Godfather Part III" class="article-item__image">
-                            <p class="article-item__text">The Godfather Part III</p>
-                        </article>
-                    </div>
-                </div>
+                </article>
             </section>
         </div>
+        <section class="recommendations">
+            <div class="articles-container">
+                <h2 class="articles-container__title">Recomendações</h2>
+                <div class="articles-list">
+                    <article class="article-item">
+                        <img src="assets/the_godfather.jpg" alt="Capa The Godfather" class="article-item__image">
+                        <p class="article-item__text">The Godfather</p>
+                    </article>
+                    <article class="article-item">
+                        <img src="assets/the_godfather_part_ii.jpg" alt="Capa The Godfather Part II" class="article-item__image">
+                        <p class="article-item__text">The Godfather Part II</p>
+                    </article>
+                    <article class="article-item">
+                        <img src="assets/the_godfather_part_iii.jpeg" alt="Capa The Godfather Part III" class="article-item__image">
+                        <p class="article-item__text">The Godfather Part III</p>
+                    </article>
+                </div>
+            </div>
+        </section>
         <section class="banner-newsletter">
             <h2 class="banner-newsletter__title">Inscreva-se na newsletter e receba conteúdos exclusivos na caixa de emails.</h2>
             <form class="newsletter-form">
