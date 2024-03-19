@@ -160,6 +160,11 @@ figcaption {
         display: flex;
         flex-direction: column;
         row-gap: 16px;
+
+        .articles-container__title {
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgb(77, 77, 77);
+        }
         
         .articles-list {
             display: grid;

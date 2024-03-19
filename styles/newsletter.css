@@ -1,0 +1,17 @@
+.newsletter-section {
+    width: 100%;
+    padding: 60px 24px;
+
+    .newsletter-section__container {
+        max-width: 1366px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;   
+    }
+
+    .newsletter-section__content {
+        width: 60%;
+        text-align: center;   
+    }
+}
+
